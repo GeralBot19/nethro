@@ -4,11 +4,11 @@ global.dfail('admin', m, conn)
 throw false
 }
 let pesan = args.join` `
-let oi = `➢𝐌𝐄𝐍𝐒𝐀𝐉𝐄:  ${pesan}`
+let oi = `🤖— 𝗡𝗘𝗧𝗛𝗥𝗢 𝘽𝙊𝙏 —🤖  ${pesan}`
 let teks = ` ...𝑬𝑺 𝑯𝑶𝑹𝑨 𝑫𝑬 𝑱𝑼𝑮𝑨𝑹 ‼️  \n\n ${oi}\n\n ➢𝐄𝐭𝐢𝐪𝐮𝐞𝐭𝐚𝐬: \n`
 for (let mem of participants) {
 teks += `♦️≽ @${mem.id.split('@')[0]}\n`}
-teks += `🤖— 𝗡𝗘𝗧𝗛𝗥𝗢 𝘽𝙊𝙏 —🤖`
+teks += `@𝐍𝐄𝐓𝐇𝐑𝐎.𝐆𝐀𝐌𝐈𝐍𝐆`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
